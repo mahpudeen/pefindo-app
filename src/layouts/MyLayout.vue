@@ -1,87 +1,142 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          @click="leftDrawerOpen = !leftDrawerOpen"
-          icon="menu"
-          aria-label="Menu"
-        />
+  <q-layout view="lHh Lpr lFf" class="bg-positive">
+    <q-header  class="bg-white" style="height: 60px">
+        
+        <div class="row" style="height:10px"/>
+        <div class="row items-center">
+          <div class="col-1 q-gutter-xl"> <q-btn flat dense round color="black" @click="leftDrawerOpen = !leftDrawerOpen" icon="menu" aria-label="Menu"/> </div>
+          <div class="col-3">
 
-        <q-toolbar-title>
-          Pefindo App
-        </q-toolbar-title>
+            <q-item>
+              <q-item-section avatar>
+                <q-icon size="30px" color="black" name="date_range"/>
+              </q-item-section>
 
-        <div>Quasar v{{ $q.version }}</div>
-      </q-toolbar>
+              <q-item-section>
+                <div class="text-overline text-bold text-black">29.11.2019</div>
+              </q-item-section>
+
+              <q-item-section>
+                <div class="text-overline text-bold text-secondary">12:00</div>
+              </q-item-section>
+            </q-item>
+
+          </div>
+          <div class="col-6"></div>
+          <div class="col-2">
+            <div class="column">
+              <div class="col-1"> <div class="text-right text-subtitle2 text-black text-bold">Nama Panjang</div></div>
+              <div class="col-1"> <div class="text-right text-body2 text-red text-bold">Jabatan</div></div>
+            </div> 
+          </div> 
+          <div class="col-1" style="width:40px">
+            <q-icon color="black" size="40px" name="face"/>
+          </div> 
+        </div> 
+      
     </q-header>
 
     <q-drawer
       v-model="leftDrawerOpen"
       show-if-above
       bordered
-      content-class="bg-grey-2"
+      content-class="bg-primary"
     >
-      <q-list>
-        <q-item-label header>Essential Links</q-item-label>
-        <q-item clickable tag="a" target="_blank" href="https://quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="school" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Docs</q-item-label>
-            <q-item-label caption>quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://github.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="code" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Github</q-item-label>
-            <q-item-label caption>github.com/quasarframework</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://chat.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="chat" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Discord Chat Channel</q-item-label>
-            <q-item-label caption>chat.quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://forum.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="record_voice_over" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Forum</q-item-label>
-            <q-item-label caption>forum.quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://twitter.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="rss_feed" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Twitter</q-item-label>
-            <q-item-label caption>@quasarframework</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://facebook.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="public" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Facebook</q-item-label>
-            <q-item-label caption>@QuasarFramework</q-item-label>
-          </q-item-section>
-        </q-item>
-      </q-list>
+      
+        <q-toolbar class="bg-accent">
+        <div class="row items-center">
+          <div class="col-1 q-gutter-sm"/>
+          <div class="col-4">
+             <q-img src="./statics/logo.png" class="logo"/> 
+          </div>
+          <div class="col-1 q-gutter-lg"/>
+          <div class="col">
+            <q-item-label header class="text-h5 text-bold text-secondary" >PEFINDO</q-item-label>
+          </div>
+        </div>
+        </q-toolbar>
+        
+        <div class="column" style="height:30px"/>
+      <div class="row">
+        <div class="col-1 q-gutter-md"/>
+        <div class="col">
+          <q-list>
+            <div class="text-white">
+            
+            <q-item clickable v-ripple @click="$router.replace('ScoringEngine')">
+              <q-item-section avatar>
+                <q-icon size="31px" name="data_usage" color="white"/>
+              </q-item-section>
+
+              <q-item-section>
+                <div class="text-body1 text-bold">Scoring Engine</div>
+              </q-item-section>
+            </q-item> 
+
+            <div style="height:20px"/>
+
+            <q-item clickable v-ripple @click="$router.replace('Model')">
+              <q-item-section avatar>
+                <q-icon size="31px" name="dynamic_feed" color="white"/>
+              </q-item-section>
+
+              <q-item-section>
+                <div class="text-body1 text-bold">Model</div>
+              </q-item-section>
+            </q-item> 
+            
+            <div style="height:20px"/>
+
+            <q-item clickable v-ripple @click="$router.replace('')">
+              <q-item-section avatar>
+                <q-icon size="31px" name="dvr" color="white"/>
+              </q-item-section>
+
+              <q-item-section>
+                <div class="text-body1 text-bold">Model Performance</div>
+              </q-item-section>
+            </q-item> 
+            
+            <div style="height:20px"/>
+
+            <q-item clickable v-ripple @click="$router.replace('')">
+              <q-item-section avatar>
+                <q-icon size="31px" name="settings_applications" color="white"/>
+              </q-item-section>
+
+              <q-item-section>
+                <div class="text-body1 text-bold">Profil Setting</div>
+              </q-item-section>
+            </q-item> 
+            
+            <div style="height:20px"/>
+
+            <q-item clickable v-ripple @click="$router.replace('')">
+              <q-item-section avatar>
+                <q-icon size="31px" name="supervisor_account" color="white"/>
+              </q-item-section>
+
+              <q-item-section>
+                <div class="text-body1 text-bold">Key User Management</div>
+              </q-item-section>
+            </q-item> 
+            
+            <div style="height:20px"/>
+            
+            <q-item clickable v-ripple @click="$router.replace('')">
+              <q-item-section avatar>
+                <q-icon size="31px" name="insert_chart" color="white"/>
+              </q-item-section>
+
+              <q-item-section>
+                <div class="text-body1 text-bold">Server Monitoring</div>
+              </q-item-section>
+            </q-item> 
+
+            </div>
+          </q-list>
+        </div>
+      </div>
     </q-drawer>
 
     <q-page-container>
@@ -101,3 +156,10 @@ export default {
   }
 }
 </script>
+
+
+<style lang="sass" scoped>
+.logo
+  height: 35px
+  width: 35px
+</style>
