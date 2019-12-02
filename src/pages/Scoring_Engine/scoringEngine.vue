@@ -29,9 +29,9 @@
                     <div style="height:15px"/>
                     <div class="col-1">
                         <div class="q-gutter-sm">
-                            <q-btn size="10px" color="deep-purple-6" text-color="white" label="Tradisional"/>
-                            <q-btn size="10px" color="orange-10" text-color="white" label="AI"/>
-                            <q-btn size="10px" color="cyan-6" text-color="white" label="BRE"/>
+                            <q-btn size="10px" color="deep-purple-6" text-color="white" label="Tradisional" @click="$router.replace('tradisional')"/>
+                            <q-btn size="10px" color="orange-10" text-color="white" label="AI" @click="$router.replace('ai')"/>
+                            <q-btn size="10px" color="cyan-6" text-color="white" label="BRE" @click="$router.replace('bre')"/>
                         </div>
                     </div>
                     <div style="height:15px"/>
@@ -50,7 +50,7 @@
                     </div>
                     <div style="height:15px"/>
                     <div class="col-1">
-                        <div class="text-negative text-h7 text-bold">E-Commerce</div>
+                        <div class="text-negative text-h7 text-bold">Telco</div>
                     </div>
                     <div style="height:15px"/>
                     <div class="col-1">
@@ -76,7 +76,7 @@
                     </div>
                     <div style="height:15px"/>
                     <div class="col-1">
-                        <div class="text-negative text-h7 text-bold">E-Commerce</div>
+                        <div class="text-negative text-h7 text-bold">Credit</div>
                     </div>
                     <div style="height:15px"/>
                     <div class="col-1">
