@@ -3,13 +3,12 @@
         <div style="height:40px"/>
 
         <div class="row items-center">
-            <div class="col-1 q-gutter-lg"> <div class="text-h5 text-bold">Model</div> </div>
-            <div class="col-1 q-gutter-xl"/>
-            <div class="col-1 q-gutter-xl"> <q-icon size="20px" name="home" color="secondary"/></div>
-            <div class="col-1 q-gutter-xl"> <div class="text-body1 text-bold text-secondary">-</div> </div>
-            <div class="col-2 q-gutter-lg"> <div class="text-subtitle text-bold text-secondary">Model</div> </div>
-            <div class="col-6 q-gutter-lg"/>
-            <div class="col"> 
+             <div class="col-1 q-gutter-xl"/><div class="col-auto"> <div class="text-h5 text-bold">Model</div> </div>
+            <div class="col-1 q-gutter-xl"/><div class="col-auto"> <q-icon size="20px" name="home" color="secondary"/></div>
+            <div class="col-1 q-gutter-xl"/><div class="col-auto"> <div class="text-body1 text-bold text-secondary"> - </div> </div>
+            <div class="col-1 q-gutter-xl"/><div class="col-auto"> <div class="text-subtitle2 text-bold text-secondary">Model</div> </div>
+            <div class="col"/>
+            <div class="col-auto"> 
                 <q-btn  unelevated rounded color="secondary" 
                 label="Input New Model" icon="add_circle_outline" 
                 @click="$router.replace('input_new_model')"/>
@@ -19,7 +18,7 @@
         
         <div style="height:23px"/>
 
-        <div class="row justify-center">
+        <div class="row justify-left">
         
         <div class="col-4 q-gutter-lg padding">
             <q-card>
@@ -36,7 +35,7 @@
                     <div class="col-1">
                         <div class="q-gutter-sm">
                             <q-btn size="13px" color="deep-purple-6" text-color="white" label="View" @click="$router.replace('view')"/>
-                            <q-btn size="13px" color="orange-10" text-color="white" label="Edit"/>
+                            <q-btn size="13px" color="orange-10" text-color="white" label="Edit" @click="$router.replace('edit')"/>
                             <q-btn size="13px" color="cyan-6" text-color="white" label="Delete"/>
                         </div>
                     </div>

@@ -3,12 +3,14 @@
         <div style="height:40px"/>
 
         <div class="row items-center">
-            <div class="col-1 q-gutter-xl"/><div class="col-auto"> <div class="text-h5 text-bold">Model</div> </div>
-            <div class="col-1 q-gutter-xl"/><div class="col-auto"> <q-icon size="20px" name="home" color="secondary"/></div>
-            <div class="col-1 q-gutter-xl"/><div class="col-auto"> <div class="text-body1 text-bold text-secondary"> - </div> </div>
-            <div class="col-1 q-gutter-xl"/><div class="col-auto"> <div class="text-subtitle2 text-bold text-secondary">Model</div> </div>
-            <div class="col-1 q-gutter-xl"/><div class="col-auto"> <div class="text-body1 text-bold text-secondary">-</div> </div>
-            <div class="col-1 q-gutter-xl"/><div class="col-auto"> <div class="text-subtitle2 text-bold text-negative">Model Form</div> </div>
+            <div class="col-1 q-gutter-xl"/>
+            <div class="col-1 q-gutter-lg"> <div class="text-h5 text-bold">Model</div> </div>
+            <div class="col-1 q-gutter-xl"/>
+            <div class="col-1 q-gutter-xl"> <q-icon size="20px" name="home" color="secondary"/></div>
+            <div class="col-1 q-gutter-xl"> <div class="text-body1 text-bold text-secondary">-</div> </div>
+            <div class="col-1 q-gutter-lg"> <div class="text-subtitle2 text-bold text-secondary">Model</div> </div>
+            <div class="col-1 q-gutter-xl"> <div class="text-body1 text-bold text-secondary">-</div> </div>
+            <div class="col-2 q-gutter-lg"> <div class="text-subtitle2 text-bold text-negative">Model Form</div> </div>
         </div>
 
         <div style="height:23px"/>
@@ -20,7 +22,7 @@
                     <div class="column">
                         <div style="height:20px"/>
                         <div class="col-1">
-                            <div class="text-h6 text-secondary text-bold">Form Add Model</div>
+                            <div class="text-h6 text-secondary text-bold">Form Edit Model</div>
                         </div>
                         
                         <div style="height:10px"/>
@@ -34,22 +36,22 @@
                         <div class="col-1">
                             <div class="column">
                                 <div class="col input">
-                                    <q-input outlined v-model="text" label="Nama Model" />
+                                    <q-input outlined v-model="text" label="Nama Model"  placeholder="E-Commerce" />
                                 </div>
                                 <div class="col input">
-                                    <q-input outlined v-model="text" label="Endpoint Tradisional" />
+                                    <q-input outlined v-model="text" label="Endpoint Tradisional"  placeholder="/tb/ecommerce" />
                                 </div>
                                 <div class="col input">
-                                    <q-input outlined v-model="text" label="Endpoint AI" />
+                                    <q-input outlined v-model="text" label="Endpoint AI"  placeholder="/ai/ecommerce"/>
                                 </div>
                                 <div class="col input">
-                                    <q-input outlined v-model="text" label="Endpoint BRE" />
+                                    <q-input outlined v-model="text" label="Endpoint BRE" placeholder="/bre/ecommerce"/>
                                 </div>
                                 <div class="col input">
-                                    <q-input outlined v-model="text" label="Base Score" />
+                                    <q-input outlined v-model="text" label="Base Score" placeholder="490"/>
                                 </div>
                                 <div class="col input">
-                                    <q-input outlined v-model="text" label="Icon" />
+                                    <q-input outlined v-model="text" label="Icon" placeholder="fa-shop"/>
                                 </div>
                             </div>
                         </div>

@@ -5,9 +5,9 @@
         <div class="row items-center">
             <div class="col-2"> <div class="text-h5 text-bold">Scoring Engine</div> </div>
             <div class="col-1 q-gutter-xl"/>
-            <div class="col-1 q-gutter-xl"><q-icon size="20px" name="home" color="secondary"/></div>
+            <div class="col-1 q-gutter-xl"><q-icon  size="20px" name="home" color="secondary" @click="$router.replace('ScoringEngine')"/></div>
             <div class="col-1 q-gutter-xl"> <div class="text-body1 text-bold text-secondary">-</div> </div>
-            <div class="col-2"> <div class=" text-left text-subtitle text-bold text-secondary">Secondary Engine</div> </div>
+            <div class="col-2"> <div class=" text-left text-subtitle text-bold text-secondary" @click="$router.replace('ScoringEngine')">Secondary Engine</div> </div>
             <div class="col-1 q-gutter-xl"> <div class="text-body1 text-bold text-secondary">-</div> </div>
             <div class="col-2 q-gutter-lg"> <div class="text-subtitle2 text-bold text-negative">E-Commerce</div> </div>
         </div>
@@ -19,7 +19,7 @@
                 <div class="col q-gutter-xl"/>
                 <div class="col-11">
                     <div class="column">
-                        <div style="height:10px"/>
+                        <div style="height:20px"/>
                         <div class="col-1">
                             <div class="text-h6 text-secondary text-bold">Pencarian AI (E-Commerce)</div>
                         </div>
@@ -43,13 +43,12 @@
                         <div class="col-1">
                         <q-tab-panels v-model="tab" animated class="text-white">
                             <q-tab-panel name="single">
-                            <div class="row">
+                            <div class="column">
                                 
-                                <div class="col">
+                                <div class="col padding">
                                     <q-input outlined v-model="text" label="Phone Number" />
-                                </div>
-                                <div class="col-1 q-gutter-xl"/>
-                                <div class="col">
+                                </div>  
+                                <div class="col padding">
                                     <q-input outlined v-model="text" label="Full Name" />
                                 </div>
                                 
@@ -105,7 +104,8 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-
+.padding
+    padding: 10px
 
 .jarak
     margin-left: 2.5%

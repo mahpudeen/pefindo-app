@@ -14,7 +14,9 @@ const routes = [
       // Router Model
       { path: 'Model', component: () => import('pages/Model/model.vue') },
       { path: 'input_new_model', component: () => import('pages/Model/inputnewmodel.vue') },
-      { path: 'view', component: () => import('pages/Model/view.vue') }
+      { path: 'view', component: () => import('pages/Model/view.vue') },
+      { path: 'edit', component: () => import('pages/Model/editmodel.vue') },
+      { path: 'editparameter', component: () => import('pages/Model/parameter/editparameter.vue') }
       
     ]
   }

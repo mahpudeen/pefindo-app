@@ -4,25 +4,32 @@
         
         <div class="row" style="height:10px"/>
         <div class="row items-center">
-          <div class="col-1 q-gutter-xl"> <q-btn flat dense round color="black" @click="leftDrawerOpen = !leftDrawerOpen" icon="menu" aria-label="Menu"/> </div>
-          <div class="col-3">
-
+          <div class="col-auto"> <q-btn flat dense round color="black" @click="leftDrawerOpen = !leftDrawerOpen" icon="menu" aria-label="Menu"/> </div>
+          
+            <div class="col-auto">
             <q-item>
               <q-item-section avatar>
                 <q-icon size="30px" color="black" name="date_range"/>
               </q-item-section>
+            </q-item>
+            </div>
 
+           <div class="col-auto">
+            <q-item>
               <q-item-section>
                 <div class="text-overline text-bold text-black">29.11.2019</div>
               </q-item-section>
+            </q-item>
+           </div>
 
+           <div class="col-auto">
+            <q-item>
               <q-item-section>
                 <div class="text-overline text-bold text-secondary">12:00</div>
               </q-item-section>
             </q-item>
-
-          </div>
-          <div class="col-6"></div>
+           </div>
+          <div class="col"/>
           <div class="col-2">
             <div class="column">
               <div class="col-1"> <div class="text-right text-subtitle2 text-black text-bold">Nama Panjang</div></div>

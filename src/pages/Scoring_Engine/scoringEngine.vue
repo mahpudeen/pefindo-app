@@ -13,9 +13,9 @@
         
         <div style="height:15px"/>
 
-        <div class="row justify-center">
+        <div class="row justify-left">
         
-        <div class="col-4 q-gutter-lg">
+        <div class="col-4 q-gutter-lg padding">
             <q-card>
                 <div class="column items-center">
                     <div style="height:10px"/>
@@ -39,57 +39,10 @@
             </q-card>
         </div>
 
-        <div style="width:10px"/>
+        <div style="width:15px"/>
 
-        <div class="col-4 q-gutter-lg">
-            <q-card>
-                <div class="column items-center">
-                    <div style="height:10px"/>
-                    <div class="col-6">
-                        <q-icon name="card_travel" size="90px" color="secondary"/>
-                    </div>
-                    <div style="height:15px"/>
-                    <div class="col-1">
-                        <div class="text-negative text-h7 text-bold">Telco</div>
-                    </div>
-                    <div style="height:15px"/>
-                    <div class="col-1">
-                        <div class="q-gutter-sm">
-                            <q-btn size="10px" color="deep-purple-6" text-color="white" label="Tradisional"/>
-                            <q-btn size="10px" color="orange-10" text-color="white" label="AI"/>
-                            <q-btn size="10px" color="cyan-6" text-color="white" label="BRE"/>
-                        </div>
-                    </div>
-                    <div style="height:15px"/>
-                </div>
-            </q-card>
-        </div>
-
-        <div style="width:10px"/>
-
-        <div class="col-4 q-gutter-lg">
-            <q-card>
-                <div class="column items-center">
-                    <div style="height:10px"/>
-                    <div class="col-6">
-                        <q-icon name="card_travel" size="90px" color="secondary"/>
-                    </div>
-                    <div style="height:15px"/>
-                    <div class="col-1">
-                        <div class="text-negative text-h7 text-bold">Credit</div>
-                    </div>
-                    <div style="height:15px"/>
-                    <div class="col-1">
-                        <div class="q-gutter-sm">
-                            <q-btn size="10px" color="deep-purple-6" text-color="white" label="Tradisional"/>
-                            <q-btn size="10px" color="orange-10" text-color="white" label="AI"/>
-                            <q-btn size="10px" color="cyan-6" text-color="white" label="BRE"/>
-                        </div>
-                    </div>
-                    <div style="height:15px"/>
-                </div>
-            </q-card>
-        </div>
+        
+       
         
         </div>
         
@@ -106,4 +59,7 @@ export default {
 <style lang="sass" scoped>
 .jarak
     margin-left: 3%
+
+.padding
+    padding: 15px 
 </style>
